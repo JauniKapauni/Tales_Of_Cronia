@@ -11,10 +11,6 @@ public class MovementScript : MonoBehaviour
 
         if (Keyboard.current.wKey.isPressed)
             movement.y += 1;
-
-        if (Keyboard.current.sKey.isPressed)
-            movement.y -= 1;
-
         if (Keyboard.current.aKey.isPressed)
             movement.x -= 1;
         if (Keyboard.current.aKey.wasPressedThisFrame){
