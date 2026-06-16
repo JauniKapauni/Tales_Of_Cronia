@@ -17,10 +17,14 @@ public class MovementScript : MonoBehaviour
 
         if (Keyboard.current.aKey.isPressed)
             movement.x -= 1;
-
+        if (Keyboard.current.aKey.wasPressedThisFrame){
+            transform.rotation = Quaternion.Euler(0f, -180f, 0f);
+        }
         if (Keyboard.current.dKey.isPressed)
             movement.x += 1;
-
+        if (Keyboard.current.dKey.wasPressedThisFrame){
+            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        }
         transform.position += (Vector3)(movement * speed * Time.deltaTime);
     }
 }
