@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 224644036}
   - component: {fileID: 224644040}
   m_Layer: 0
-  m_Name: cloderic_idle0_0
+  m_Name: cloderic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
